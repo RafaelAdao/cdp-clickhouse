@@ -1,0 +1,16 @@
+<yandex>
+    <users>
+        <default>
+            <profile>default</profile>
+            <networks>
+                <ip>::/0</ip>
+            </networks>
+        </default>
+    </users>
+
+    <profiles>
+        <default>
+            <enable_json_type>1</enable_json_type>
+        </default>
+    </profiles>
+</yandex>

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  clickhouse:
+    image: clickhouse
+    container_name: clickhouse
+    ports:
+      - "18123:8123"
+      - "19000:9000"
+    environment:
+      - CLICKHOUSE_PASSWORD=changeme
+    volumes:
+      - ./clickhouse/config/users.xml:/etc/clickhouse-server/users.xml:ro
+      - ./clickhouse/init/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - clickhouse_data:/var/lib/clickhouse
+
+volumes:
+  clickhouse_data:
