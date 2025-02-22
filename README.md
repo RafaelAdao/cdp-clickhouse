@@ -50,7 +50,9 @@ On the examples.sql file, you can find some examples of queries that you can run
 
 ## Explanation
 
-Blog post comming soon.
+Further blog posts will be written to explain the concepts and the implementation of the use cases.
+
+- [Exploring ClickHouse: A Beginner’s Journey](https://rafael-adao.medium.com/exploring-clickhouse-a-beginners-journey-06a58c6e84bc)
 
 ## Cleaning up
 
