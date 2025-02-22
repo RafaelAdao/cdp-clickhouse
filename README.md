@@ -2,6 +2,8 @@
 
 The first priority of this project is to explore Clickhouse by designing a simple CDP use case. The project is a work in progress and the main goal is to learn and share the knowledge.
 
+Also, the use case is very inspired by the [Rebuilding Segmentation with ClickHouse - Patrick McGrath (Klaviyo)](https://www.youtube.com/watch?v=a9nHW93Ehi8) presentation.
+
 ## What is CDP?
 
 Customer Data Platform (CDP) is a type of software which creates a persistent, unified customer database that is accessible to other systems. Data is pulled from multiple sources, cleaned and combined to create a single customer profile. This structured data is then made available to other marketing systems.
