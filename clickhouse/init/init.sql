@@ -65,18 +65,32 @@ CREATE TABLE criteria
 ENGINE = ReplacingMergeTree(version)
 ORDER BY (tenant_id, segment_id);
 
-
-CREATE MATERIALIZED VIEW segment_membership
+CREATE TABLE segment_membership
+(
+    tenant_id UInt32,
+    segment_id String,
+    filters Array(
+        Tuple(
+            property_path String,
+            operator String,
+            value String,
+            data_type String
+        )
+    ),
+    entity_id String,
+    properties JSON,
+)
 ENGINE = MergeTree
-ORDER BY (tenant_id, segment_id, entity_id)
-POPULATE
+ORDER BY (tenant_id, segment_id, entity_id);
+
+CREATE MATERIALIZED VIEW segment_membership_mv
+TO segment_membership
 AS SELECT
     e.tenant_id,
     c.segment_id,
     c.filters,
     e.entity_id,
-    e.properties,
-    now() AS last_updated
+    e.properties
 FROM entities AS e
 INNER JOIN criteria AS c ON e.tenant_id = c.tenant_id
 WHERE arrayAll(

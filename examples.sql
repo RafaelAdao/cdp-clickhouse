@@ -51,3 +51,7 @@ SELECT * from segment_membership format vertical;
 -- entity_id:    lead_003
 -- properties:   {"budget":"20000","company_size":"80","email_engagement":"80","industry":"Marketing","job_title":"CTO","last_activity":"2025-02-10","location":"UK","purchased_before":true,"trial_used":true,"website_activity":"90"}
 -- last_updated: 2025-02-20 20:16:37
+
+-- Making changes to lead_003 leave the high_interest segment ("website_activity": 90 => 10)
+INSERT INTO entities (tenant_id, entity_id, properties, event_time) VALUES 
+(1, 'lead_003', '{"industry": "Marketing", "company_size": 80, "job_title": "CTO", "website_activity": 10, "email_engagement": 80, "trial_used": true, "budget": 20000, "last_activity": "2025-02-10"}', now());
