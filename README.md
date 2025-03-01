@@ -4,6 +4,11 @@ The first priority of this project is to explore Clickhouse by designing a simpl
 
 Also, the use case is very inspired by the [Rebuilding Segmentation with ClickHouse - Patrick McGrath (Klaviyo)](https://www.youtube.com/watch?v=a9nHW93Ehi8) presentation.
 
+
+Further blog posts will be written to explain the concepts and the implementation of the use cases.
+
+- [Exploring ClickHouse: A Beginner’s Journey](https://rafael-adao.medium.com/exploring-clickhouse-a-beginners-journey-06a58c6e84bc)
+
 ## What is CDP?
 
 Customer Data Platform (CDP) is a type of software which creates a persistent, unified customer database that is accessible to other systems. Data is pulled from multiple sources, cleaned and combined to create a single customer profile. This structured data is then made available to other marketing systems.
@@ -49,12 +54,6 @@ docker exec -it clickhouse clickhouse-client
 or you can access the Clickhouse client through the browser by visiting the following URL http://localhost:18123/play?password=changeme
 
 On the examples.sql file, you can find some examples of queries that you can run on the Clickhouse client.
-
-## Explanation
-
-Further blog posts will be written to explain the concepts and the implementation of the use cases.
-
-- [Exploring ClickHouse: A Beginner’s Journey](https://rafael-adao.medium.com/exploring-clickhouse-a-beginners-journey-06a58c6e84bc)
 
 ## Cleaning up
 
