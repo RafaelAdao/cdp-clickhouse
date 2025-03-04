@@ -38,7 +38,7 @@ This project is a work in progress. Below are the tasks that are planned to be i
   - [ ] events
 - [ ] send notifications when a user enters/exits a segment
   - [x] enter
-  - [ ] exists
+  - [ ] exits
 ![image](https://github.com/user-attachments/assets/5982aaf5-d99a-48e3-af14-5e9967010e89)
 
 ## Getting started
