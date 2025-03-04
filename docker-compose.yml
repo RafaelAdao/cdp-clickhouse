@@ -13,6 +13,23 @@ services:
       - ./clickhouse/config/users.xml:/etc/clickhouse-server/users.xml:ro
       - ./clickhouse/init/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
       - clickhouse_data:/var/lib/clickhouse
+  zookeeper:
+    image: debezium/zookeeper:2.7.3.Final
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    restart: always
+
+  kafka:
+    image: debezium/kafka:2.7.3.Final
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      ZOOKEEPER_CONNECT: zookeeper:2181
+    depends_on:
+      - zookeeper
+    restart: always
 
 volumes:
   clickhouse_data:
