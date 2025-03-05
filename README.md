@@ -6,7 +6,8 @@ Also, the use case is very inspired by the [Rebuilding Segmentation with ClickHo
 
 Further blog posts will be written to explain the concepts and the implementation of the use cases.
 
-- [Exploring ClickHouse: A Beginner’s Journey](https://rafael-adao.medium.com/exploring-clickhouse-a-beginners-journey-06a58c6e84bc)
+- [Exploring ClickHouse: A Beginner’s Journey](https://rafael-adao.medium.com/exploring-clickhouse-a-beginners-journey-06a58c6e84bc) / Explorando Clickhouse: a jornada de um iniciante
+- Testing Functions in ClickHouse with a Segmentation Example / [Testando Funções no ClickHouse com um Exemplo de Segmentação](https://rafael-adao.medium.com/testando-fun%C3%A7%C3%B5es-no-clickhouse-com-um-exemplo-de-segmenta%C3%A7%C3%A3o-46428f0b3406)
 
 ## What is CDP?
 
