@@ -26,6 +26,8 @@ In this project, we will explore the following use cases:
 
 ## Working in progress
 
+![mermaid-diagram-2025-03-03-211740](https://github.com/user-attachments/assets/8cce5db4-06a6-4bb2-ab9f-d5bbac08df7b)
+
 This project is a work in progress. Below are the tasks that are planned to be implemented:
 
 - [x] clickhouse setup with docker compose
@@ -35,6 +37,9 @@ This project is a work in progress. Below are the tasks that are planned to be i
   - [ ] segment_membership
   - [ ] events
 - [ ] send notifications when a user enters/exits a segment
+  - [x] enter
+  - [ ] exits
+![image](https://github.com/user-attachments/assets/5982aaf5-d99a-48e3-af14-5e9967010e89)
 
 ## Getting started
 
